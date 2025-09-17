@@ -31,7 +31,7 @@ export const ContactForm: React.FC = () => {
 
     
     try {
-      const response = await fetch(`${API_URL}/contact`, {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/contact`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
